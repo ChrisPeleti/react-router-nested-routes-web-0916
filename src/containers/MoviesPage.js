@@ -15,6 +15,7 @@ class MoviesPage extends Component {
   render(){
     return(
       <div>
+        <h1>MoviesPage</h1>
         <MoviesList movies={this.props.movies} />
         { this.props.children }
       </div>)
@@ -33,4 +34,4 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MoviePage);
+export default connect(mapStateToProps, mapDispatchToProps)(MoviesPage);
